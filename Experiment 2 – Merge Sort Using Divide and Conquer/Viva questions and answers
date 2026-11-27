@@ -1,0 +1,121 @@
+## Experiment 2: Merge Sort Using Divide and Conquer
+
+**Q1. What is Merge Sort?**
+
+Ans: Merge Sort is a comparison-based sorting algorithm that uses the Divide and Conquer technique.
+
+**Q2. What is Divide and Conquer?**
+
+Ans: An algorithm design technique that divides a problem into smaller subproblems, solves them and combines their results.
+
+**Q3. What are the three steps of Divide and Conquer?**
+
+Ans: Divide, Conquer and Combine.
+
+**Q4. What is the best-case time complexity of Merge Sort?**
+
+Ans: O(n log n) for the standard implementation.
+
+**Q5. What is the average-case time complexity of Merge Sort?**
+
+Ans: O(n log n).
+
+**Q6. What is the worst-case time complexity of Merge Sort?**
+
+Ans: O(n log n).
+
+**Q7. What is the auxiliary space complexity of Merge Sort?**
+
+Ans: O(n) for the standard array-based implementation.
+
+**Q8. Is Merge Sort a stable sorting algorithm?**
+
+Ans: Yes.
+
+**Q9. What is a stable sorting algorithm?**
+
+Ans: A sorting algorithm that preserves the relative order of elements having equal keys.
+
+**Q10. Is standard array-based Merge Sort an in-place sorting algorithm?**
+
+Ans: No, because it requires additional memory for merging.
+
+**Q11. What is recursion?**
+
+Ans: A programming technique in which a function calls itself to solve smaller instances of a problem.
+
+**Q12. What is the base condition of Merge Sort?**
+
+Ans: Recursion stops when the subarray contains zero or one element.
+
+**Q13. What is the recurrence relation of Merge Sort?**
+
+Ans: T(n) = 2T(n/2) + O(n).
+
+**Q14. What is the purpose of the merge() function?**
+
+Ans: To combine two sorted subarrays into a single sorted array.
+
+**Q15. What is the time complexity of merging two sorted subarrays?**
+
+Ans: O(n), where n is the total number of elements in both subarrays.
+
+**Q16. How is the middle index calculated?**
+
+Ans: mid = left + (right - left) / 2.
+
+**Q17. Why is a temporary array used in Merge Sort?**
+
+Ans: To store merged elements before copying them back into the original array.
+
+**Q18. Can Merge Sort handle duplicate elements?**
+
+Ans: Yes.
+
+**Q19. Can Merge Sort handle negative numbers?**
+
+Ans: Yes.
+
+**Q20. What is the main advantage of Merge Sort?**
+
+Ans: It guarantees O(n log n) time complexity and provides stable sorting.
+
+**Q21. What is the main disadvantage of Merge Sort?**
+
+Ans: It requires additional memory for merging.
+
+**Q22. What is the difference between Merge Sort and Quick Sort?**
+
+Ans: Merge Sort divides the array into halves and merges them, whereas Quick Sort partitions elements around a pivot.
+
+**Q23. What is the worst-case time complexity of Quick Sort?**
+
+Ans: O(n squared).
+
+**Q24. Which sorting algorithm is suitable for external sorting?**
+
+Ans: Merge Sort.
+
+**Q25. What is the recursion depth of Merge Sort?**
+
+Ans: O(log n).
+
+**Q26. Why is Merge Sort faster than Bubble Sort for large datasets?**
+
+Ans: Merge Sort has O(n log n) time complexity, whereas Bubble Sort has O(n squared) average and worst-case time complexity.
+
+**Q27. Does Merge Sort require a pivot element?**
+
+Ans: No. Quick Sort uses a pivot element.
+
+**Q28. How can Merge Sort be modified to sort in descending order?**
+
+Ans: Reverse the comparison condition during the merging operation.
+
+**Q29. Why does the merge function use the less-than-or-equal comparison?**
+
+Ans: To select elements from the left subarray first when values are equal, preserving stability.
+
+**Q30. What are the applications of Merge Sort?**
+
+Ans: External sorting, linked list sorting, inversion counting and large dataset processing.
