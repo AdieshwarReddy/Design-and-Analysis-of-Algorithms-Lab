@@ -1,0 +1,81 @@
+## Experiment 1: Union-Find Operations
+
+**Q1. What is Union-Find?**
+
+Ans: A data structure used to maintain and merge disjoint sets.
+
+**Q2. What is DSU?**
+
+Ans: Disjoint Set Union.
+
+**Q3. What are disjoint sets?**
+
+Ans: Sets that do not contain any common elements.
+
+**Q4. What are the basic operations of Union-Find?**
+
+Ans: Make Set, Find and Union.
+
+**Q5. What is the Find operation?**
+
+Ans: It identifies the representative or root of a set.
+
+**Q6. What is the Union operation?**
+
+Ans: It combines two different sets into a single set.
+
+**Q7. What is path compression?**
+
+Ans: An optimization technique that directly connects visited nodes to their root during the Find operation.
+
+**Q8. What is union by rank?**
+
+Ans: An optimization technique that attaches the tree with smaller rank to the tree with larger rank.
+
+**Q9. What is the initial parent of each element?**
+
+Ans: The element itself.
+
+**Q10. What is the initial rank of each element?**
+
+Ans: Zero.
+
+**Q11. How do we check whether two people belong to the same group?**
+
+Ans: By checking whether both people have the same root representative.
+
+**Q12. What is the time complexity of optimized Union-Find?**
+
+Ans: O(alpha(n)) amortized per Union or Find operation.
+
+**Q13. What is the space complexity of Union-Find?**
+
+Ans: O(n).
+
+**Q14. What is the inverse Ackermann function?**
+
+Ans: An extremely slowly growing mathematical function used in the complexity analysis of Union-Find.
+
+**Q15. What are the applications of Union-Find?**
+
+Ans: Social networks, connected components, network connectivity, cycle detection and Kruskal's algorithm.
+
+**Q16. Can Union-Find detect cycles?**
+
+Ans: Yes, in undirected graphs.
+
+**Q17. What happens when two elements already belong to the same set?**
+
+Ans: The Union operation does not modify the sets.
+
+**Q18. Why is Union-Find useful in social networks?**
+
+Ans: It efficiently identifies people belonging to the same connected social group.
+
+**Q19. What is a connected component?**
+
+Ans: A maximal group of vertices connected through paths in an undirected graph.
+
+**Q20. Can standard Union-Find efficiently delete friendship connections?**
+
+Ans: No. Standard Union-Find supports merging sets but does not efficiently support splitting them.
