@@ -1,0 +1,161 @@
+## Experiment 4: N-Queens Using Backtracking
+
+**Q1. What is the N-Queens problem?**
+
+Ans: A problem of placing N queens on an N x N chessboard such that no two queens attack each other.
+
+**Q2. Which algorithm technique is used in the N-Queens problem?**
+
+Ans: Backtracking.
+
+**Q3. What are the constraints of the N-Queens problem?**
+
+Ans: No two queens can occupy the same row, column or diagonal.
+
+**Q4. How many queens must be placed on the chessboard?**
+
+Ans: N queens.
+
+**Q5. What is backtracking?**
+
+Ans: An algorithm design technique that builds solutions incrementally and abandons invalid choices.
+
+**Q6. How is the chessboard represented in our program?**
+
+Ans: Using a two-dimensional vector of size N x N.
+
+**Q7. What does zero represent on the chessboard?**
+
+Ans: An empty position.
+
+**Q8. What does one represent on the chessboard?**
+
+Ans: A position occupied by a queen.
+
+**Q9. What is the purpose of the isSafe() function?**
+
+Ans: To check whether a queen can be placed at a particular position without attacking another queen.
+
+**Q10. Which directions are checked by the isSafe() function?**
+
+Ans: The upper column, upper-left diagonal and upper-right diagonal.
+
+**Q11. Why is the current row not checked?**
+
+Ans: The algorithm places only one queen in each row.
+
+**Q12. Why are the lower diagonals not checked?**
+
+Ans: Queens are placed row by row from top to bottom, so the lower rows are empty.
+
+**Q13. What is the purpose of solveNQueens()?**
+
+Ans: To recursively place queens in safe positions using backtracking.
+
+**Q14. What is the base condition of the recursive function?**
+
+Ans: When row equals N, indicating that all N queens have been placed.
+
+**Q15. When does backtracking occur?**
+
+Ans: When the current queen placement cannot lead to a complete valid solution.
+
+**Q16. How is backtracking performed in the program?**
+
+Ans: By resetting the current queen position to zero and trying another column.
+
+**Q17. Does a solution exist for N = 1?**
+
+Ans: Yes, there is one solution.
+
+**Q18. Does a solution exist for N = 2?**
+
+Ans: No.
+
+**Q19. Does a solution exist for N = 3?**
+
+Ans: No.
+
+**Q20. How many solutions exist for the 4-Queens problem?**
+
+Ans: Two distinct solutions.
+
+**Q21. How many solutions exist for the 8-Queens problem?**
+
+Ans: 92 distinct solutions.
+
+**Q22. What is the smallest N greater than one for which a solution exists?**
+
+Ans: N = 4.
+
+**Q23. Does a solution exist for every N greater than or equal to 4?**
+
+Ans: Yes.
+
+**Q24. What is the search space complexity of N-Queens?**
+
+Ans: O(N!) candidate placements when each row and column contains at most one queen.
+
+**Q25. What is the time complexity of the isSafe() function?**
+
+Ans: O(N).
+
+**Q26. What is the space complexity of our implementation?**
+
+Ans: O(N^2), because a two-dimensional chessboard is used.
+
+**Q27. What is the recursion stack complexity?**
+
+Ans: O(N).
+
+**Q28. What is a constraint satisfaction problem?**
+
+Ans: A problem in which values must be assigned to variables while satisfying specified constraints.
+
+**Q29. What is a state space tree?**
+
+Ans: A tree representing possible states and choices explored during problem solving.
+
+**Q30. What is pruning?**
+
+Ans: Eliminating branches that cannot lead to a valid solution.
+
+**Q31. Does our program find all possible solutions?**
+
+Ans: No. It stops after finding the first valid solution.
+
+**Q32. How can the program find all possible solutions?**
+
+Ans: By recording each valid solution and continuing to explore alternative queen placements.
+
+**Q33. How can safety checking be optimized?**
+
+Ans: By maintaining arrays or sets for occupied columns and diagonals, allowing constant-time safety checks.
+
+**Q34. How can we identify queens on the same diagonal?**
+
+Ans: Queens are on the same diagonal when their row-minus-column values or row-plus-column values are equal.
+
+**Q35. What is the difference between brute force and backtracking?**
+
+Ans: Brute force examines possible configurations exhaustively, whereas backtracking eliminates invalid partial configurations early.
+
+**Q36. What are the applications of the N-Queens problem?**
+
+Ans: Constraint satisfaction, scheduling, resource allocation, artificial intelligence and combinatorial optimization.
+
+**Q37. What is the main disadvantage of the backtracking approach?**
+
+Ans: The search space grows rapidly as the problem size increases.
+
+**Q38. What happens if no safe column exists in a row?**
+
+Ans: The algorithm returns false and backtracks to the previous row.
+
+**Q39. Can the N-Queens problem be solved without recursion?**
+
+Ans: Yes, using an explicit stack or iterative search techniques.
+
+**Q40. Why is the N-Queens problem important?**
+
+Ans: It demonstrates backtracking, recursion, pruning and constraint satisfaction techniques.
