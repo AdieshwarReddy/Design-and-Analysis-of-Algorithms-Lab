@@ -1,0 +1,11 @@
+Compilation and execution
+Open GitHub Codespaces and run:
+cd 10_Job_Scheduling
+
+
+Compile:
+g++ Job_Scheduling.cpp -o job_scheduling
+
+
+Execute:
+./job_scheduling
