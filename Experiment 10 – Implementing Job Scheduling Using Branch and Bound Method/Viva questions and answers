@@ -1,0 +1,221 @@
+## Experiment 10: Job Scheduling Using Branch and Bound
+
+**Q1. What is Job Scheduling?**
+
+Ans: Job Scheduling is the process of assigning jobs to available time slots while satisfying specified constraints and optimizing an objective.
+
+**Q2. Which algorithm technique is used in this experiment?**
+
+Ans: Branch and Bound.
+
+**Q3. What is the objective of this Job Scheduling problem?**
+
+Ans: To maximize the total profit obtained by completing selected jobs within their deadlines.
+
+**Q4. What is a job deadline?**
+
+Ans: The latest time by which a job must be completed to earn its profit.
+
+**Q5. What is job profit?**
+
+Ans: The reward obtained when a job is completed within its deadline.
+
+**Q6. How much execution time does each job require in our implementation?**
+
+Ans: One unit of time.
+
+**Q7. What is Branch and Bound?**
+
+Ans: An algorithm design technique that explores possible solutions and eliminates branches that cannot improve the best known solution.
+
+**Q8. What is branching?**
+
+Ans: Dividing a problem into smaller subproblems representing different choices.
+
+**Q9. What is bounding?**
+
+Ans: Estimating the best possible result obtainable from a partial solution.
+
+**Q10. What is pruning?**
+
+Ans: Eliminating branches that cannot produce a better or feasible solution.
+
+**Q11. What is an upper bound?**
+
+Ans: An estimate of the maximum possible objective value obtainable from a branch.
+
+**Q12. What is a lower bound?**
+
+Ans: A value that does not exceed the optimal objective value. In maximization, the best feasible profit found so far provides a lower bound.
+
+**Q13. What is the upper bound formula used in our program?**
+
+Ans: Upper Bound = Current Profit + Remaining Possible Profit.
+
+**Q14. When is a branch eliminated?**
+
+Ans: When its upper bound is less than or equal to the maximum profit already obtained.
+
+**Q15. What are the two branches generated for each job?**
+
+Ans: Including the job and excluding the job.
+
+**Q16. What is a state space tree?**
+
+Ans: A tree representing all possible states and decisions of a problem.
+
+**Q17. What is a live node?**
+
+Ans: A generated node that may still be expanded.
+
+**Q18. What is a dead node?**
+
+Ans: A node that will not be expanded further.
+
+**Q19. What is an expansion node?**
+
+Ans: A node currently being expanded to generate child nodes.
+
+**Q20. What is a feasible schedule?**
+
+Ans: A schedule in which selected jobs satisfy their deadlines and no two jobs occupy the same time slot.
+
+**Q21. What is an optimal schedule?**
+
+Ans: A feasible schedule that produces the maximum possible profit.
+
+**Q22. Why are jobs sorted in descending order of profit?**
+
+Ans: To consider high-profit jobs first and obtain a strong feasible solution early.
+
+**Q23. Why is a job assigned to the latest available time slot?**
+
+Ans: To preserve earlier time slots for jobs with tighter deadlines.
+
+**Q24. Can two jobs occupy the same time slot?**
+
+Ans: No, because our implementation assumes a single processor.
+
+**Q25. Can a job be scheduled after its deadline?**
+
+Ans: No, because it would not satisfy the scheduling constraints.
+
+**Q26. What is the purpose of the Job structure?**
+
+Ans: To store the job ID, deadline and profit.
+
+**Q27. What is the purpose of the schedule array?**
+
+Ans: To store the jobs assigned to time slots in the current partial solution.
+
+**Q28. What is the purpose of the bestSchedule array?**
+
+Ans: To store the best feasible schedule discovered so far.
+
+**Q29. What is the purpose of maxProfit?**
+
+Ans: To store the highest total profit obtained.
+
+**Q30. What is the purpose of the remainingProfit array?**
+
+Ans: To store the sum of profits of jobs that have not yet been considered.
+
+**Q31. Why is remainingProfit calculated in advance?**
+
+Ans: To calculate the upper bound in constant time.
+
+**Q32. What is the worst-case candidate search space complexity?**
+
+Ans: O(2^N), because each job can be included or excluded.
+
+**Q33. What is the sorting time complexity?**
+
+Ans: O(N log N).
+
+**Q34. What is the recursion stack complexity?**
+
+Ans: O(N).
+
+**Q35. What is the total space complexity of our implementation?**
+
+Ans: O(N), because the number of time slots is limited to the number of jobs.
+
+**Q36. What is the difference between Branch and Bound and Backtracking?**
+
+Ans: Backtracking mainly eliminates infeasible solutions, whereas Branch and Bound uses objective bounds to eliminate solutions that cannot improve the current best result.
+
+**Q37. What is the difference between Greedy and Branch and Bound?**
+
+Ans: Greedy selects locally optimal choices without reconsidering them, whereas Branch and Bound explores alternative choices using bounds.
+
+**Q38. Can the classical unit-time Job Sequencing with Deadlines problem be solved using Greedy Method?**
+
+Ans: Yes. Sorting jobs by descending profit and placing them in the latest available slot gives an optimal solution for the classical unit-time problem.
+
+**Q39. Why is Branch and Bound used in this experiment?**
+
+Ans: To demonstrate branching, bounding, pruning and systematic optimization as required by the experiment.
+
+**Q40. What happens if all jobs have the same deadline of one?**
+
+Ans: Only the job with the highest profit needs to be selected.
+
+**Q41. What happens if all jobs can be completed within their deadlines?**
+
+Ans: All positive-profit jobs can be selected to maximize the total profit.
+
+**Q42. Can multiple optimal job schedules exist?**
+
+Ans: Yes. Different schedules may produce the same maximum profit.
+
+**Q43. What is FIFO Branch and Bound?**
+
+Ans: A Branch and Bound technique that explores live nodes in first-in-first-out order using a queue.
+
+**Q44. What is LIFO Branch and Bound?**
+
+Ans: A Branch and Bound technique that explores live nodes in last-in-first-out order using a stack.
+
+**Q45. What is Least Cost Branch and Bound?**
+
+Ans: A technique that expands the live node with the most promising cost bound, commonly using a priority queue.
+
+**Q46. Which search strategy is used in our implementation?**
+
+Ans: Depth-first Branch and Bound using recursion.
+
+**Q47. What is the maximum profit obtained in our first test case?**
+
+Ans: 142.
+
+**Q48. Which jobs are selected in our first test case?**
+
+Ans: J3, J1 and J5.
+
+**Q49. What are the applications of Job Scheduling?**
+
+Ans: Task scheduling, production planning, manufacturing, resource allocation and project management.
+
+**Q50. What is the main advantage of Branch and Bound?**
+
+Ans: It eliminates unpromising branches while preserving the ability to find an optimal solution.
+
+**Q51. What is the main disadvantage of Branch and Bound?**
+
+Ans: Its worst-case search complexity can be exponential.
+
+**Q52. Does Branch and Bound always guarantee polynomial-time execution?**
+
+Ans: No. Its performance depends on the problem and the effectiveness of its bounding function.
+
+**Q53. Why is Job Scheduling considered an optimization problem?**
+
+Ans: Because it selects a feasible schedule that maximizes total profit.
+
+**Q54. Can Branch and Bound be used for other optimization problems?**
+
+Ans: Yes. It can be used for the Travelling Salesman Problem, Knapsack Problem, Assignment Problem and other combinatorial optimization problems.
+
+**Q55. What is the termination condition of our recursive function?**
+
+Ans: When all jobs have been considered or the current branch cannot improve the maximum profit.
