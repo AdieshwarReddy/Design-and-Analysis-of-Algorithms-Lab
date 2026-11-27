@@ -1,0 +1,201 @@
+## Experiment 8: Optimal Binary Search Tree
+
+**Q1. What is a Binary Search Tree?**
+
+Ans: A binary tree in which the keys in the left subtree are smaller than the root and the keys in the right subtree are greater than the root.
+
+**Q2. What is an Optimal Binary Search Tree?**
+
+Ans: A Binary Search Tree constructed to minimize the expected or weighted search cost.
+
+**Q3. What is the full form of OBST?**
+
+Ans: Optimal Binary Search Tree.
+
+**Q4. Which algorithm technique is used in this experiment?**
+
+Ans: Dynamic Programming.
+
+**Q5. What is the objective of an Optimal Binary Search Tree?**
+
+Ans: To minimize the total weighted search cost of the given keys.
+
+**Q6. What is search frequency?**
+
+Ans: The number of times a particular key is searched.
+
+**Q7. Why are search frequencies important in OBST?**
+
+Ans: They determine the contribution of each key to the total search cost.
+
+**Q8. Where are frequently searched keys generally placed?**
+
+Ans: Closer to the root of the tree.
+
+**Q9. What is the difference between BST and OBST?**
+
+Ans: A normal BST follows the binary search ordering property, whereas an OBST additionally minimizes the weighted search cost.
+
+**Q10. What is the difference between OBST and AVL Tree?**
+
+Ans: An OBST minimizes weighted search cost, whereas an AVL Tree maintains height balance.
+
+**Q11. Is an Optimal Binary Search Tree always balanced?**
+
+Ans: No. Its structure depends on the search frequencies.
+
+**Q12. What is Dynamic Programming?**
+
+Ans: An algorithm design technique that solves overlapping subproblems and stores their results.
+
+**Q13. Why is Dynamic Programming used in OBST?**
+
+Ans: Because OBST has overlapping subproblems and optimal substructure.
+
+**Q14. What is optimal substructure?**
+
+Ans: A property in which an optimal solution can be constructed using optimal solutions of smaller subproblems.
+
+**Q15. What does cost[i][j] represent?**
+
+Ans: The minimum weighted search cost for keys from index i to index j.
+
+**Q16. What does root[i][j] represent?**
+
+Ans: The index of the optimal root for keys from index i to index j.
+
+**Q17. What is the recurrence relation of OBST?**
+
+Ans: cost[i][j] = sum of frequencies + minimum of left subtree cost and right subtree cost combined over all possible roots.
+
+**Q18. What is the cost of an empty subtree?**
+
+Ans: Zero.
+
+**Q19. What is the cost of a subtree containing a single key?**
+
+Ans: The search frequency of that key.
+
+**Q20. Why is every key considered as a possible root?**
+
+Ans: To identify the root that produces the minimum total search cost.
+
+**Q21. What is the time complexity of the standard OBST algorithm?**
+
+Ans: O(N^3).
+
+**Q22. What is the space complexity of OBST using Dynamic Programming?**
+
+Ans: O(N^2).
+
+**Q23. Why is the time complexity O(N^3)?**
+
+Ans: The algorithm considers O(N^2) intervals and up to N possible roots for each interval.
+
+**Q24. What is a prefix sum?**
+
+Ans: An array storing cumulative sums of elements.
+
+**Q25. Why are prefix sums used in our program?**
+
+Ans: To calculate the sum of frequencies within any interval in constant time.
+
+**Q26. What is the search cost formula for a key?**
+
+Ans: Search frequency multiplied by the level of the key, with the root at level one.
+
+**Q27. How is the total weighted search cost calculated?**
+
+Ans: By adding the weighted search costs of all keys.
+
+**Q28. What is the level of the root in our calculation?**
+
+Ans: One.
+
+**Q29. What is the minimum search cost in our first test case?**
+
+Ans: 142.
+
+**Q30. Which key is selected as the root in our first test case?**
+
+Ans: 20.
+
+**Q31. What are the search frequencies in our first test case?**
+
+Ans: 34, 8 and 50 for keys 10, 12 and 20 respectively.
+
+**Q32. Can multiple Optimal Binary Search Trees exist?**
+
+Ans: Yes. Different tree structures may have the same minimum weighted search cost.
+
+**Q33. Can OBST contain duplicate keys in our implementation?**
+
+Ans: No. The program requires distinct keys in ascending order.
+
+**Q34. Can search frequencies be negative?**
+
+Ans: No. Search frequencies represent nonnegative counts or weights.
+
+**Q35. What happens when all search frequencies are equal?**
+
+Ans: The optimal tree minimizes the sum of key levels and generally has a balanced structure.
+
+**Q36. Does selecting the most frequent key as the root always guarantee an optimal tree?**
+
+Ans: No. The search costs of the remaining subtrees must also be considered.
+
+**Q37. Which Dynamic Programming approach is used in our program?**
+
+Ans: Bottom-up Dynamic Programming using tabulation.
+
+**Q38. What is tabulation?**
+
+Ans: A Dynamic Programming technique that calculates smaller subproblems first and stores their results in a table.
+
+**Q39. What is the purpose of the printTree() function?**
+
+Ans: To reconstruct and display the optimal tree using the stored root indices.
+
+**Q40. What is a successful search?**
+
+Ans: A search operation in which the requested key exists in the tree.
+
+**Q41. What is an unsuccessful search?**
+
+Ans: A search operation in which the requested key does not exist in the tree.
+
+**Q42. Does our implementation consider unsuccessful search frequencies?**
+
+Ans: No. It considers only successful search frequencies.
+
+**Q43. Can the general OBST problem include unsuccessful searches?**
+
+Ans: Yes. The general formulation can include probabilities of both successful and unsuccessful searches.
+
+**Q44. What is the difference between OBST and Huffman Coding?**
+
+Ans: OBST maintains the sorted ordering of search keys, whereas Huffman Coding minimizes weighted encoding length without requiring BST ordering.
+
+**Q45. What is Knuth's optimization?**
+
+Ans: A technique that can reduce the standard OBST Dynamic Programming time complexity from O(N^3) to O(N^2).
+
+**Q46. Does OBST minimize the worst-case search time?**
+
+Ans: Not necessarily. It minimizes the weighted or expected search cost.
+
+**Q47. What is the main advantage of OBST?**
+
+Ans: It reduces the average search cost when search frequencies are known.
+
+**Q48. What is the main disadvantage of OBST?**
+
+Ans: Construction requires additional computation and may need to be repeated when search frequencies change.
+
+**Q49. What are the applications of OBST?**
+
+Ans: Dictionary lookup, compiler symbol tables, static lookup tables and frequently accessed records.
+
+**Q50. Why is OBST considered an optimization problem?**
+
+Ans: Because it selects a tree structure that minimizes the total weighted search cost.
