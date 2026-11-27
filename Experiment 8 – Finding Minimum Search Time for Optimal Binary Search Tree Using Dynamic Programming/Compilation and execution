@@ -1,0 +1,10 @@
+Open GitHub Codespaces and run:
+cd 08_Optimal_Binary_Search_Tree
+
+
+Compile:
+g++ OBST.cpp -o obst
+
+
+Execute:
+./obst
