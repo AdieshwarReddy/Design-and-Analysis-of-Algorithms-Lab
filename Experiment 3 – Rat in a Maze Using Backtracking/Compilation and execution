@@ -1,0 +1,11 @@
+
+Open GitHub Codespaces and run:
+cd 03_Rat_in_a_Maze
+
+
+Compile:
+g++ Rat_in_a_Maze.cpp -o rat_maze
+
+
+Execute:
+./rat_maze
