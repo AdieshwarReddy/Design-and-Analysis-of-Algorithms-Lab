@@ -1,0 +1,10 @@
+Open GitHub Codespaces and run:
+cd 04_N_Queens
+
+
+Compile:
+g++ N_Queens.cpp -o n_queens
+
+
+Execute:
+./n_queens
