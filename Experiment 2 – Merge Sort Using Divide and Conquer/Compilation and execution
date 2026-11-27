@@ -1,0 +1,11 @@
+Open GitHub Codespaces and run:
+
+cd 02_Merge_Sort
+
+
+Compile:
+g++ Merge_Sort.cpp -o merge_sort
+
+
+Execute:
+./merge_sort
