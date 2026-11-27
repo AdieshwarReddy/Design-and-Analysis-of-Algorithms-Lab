@@ -121,16 +121,3 @@ Solution Chessboard:
 All queens placed successfully.
 
 
-6. OUTPUT.md
-File path: 04_N_Queens/OUTPUT.md
-# Experiment 4: N-Queens Problem Output
-
-## Test Case 1: Four Queens
-
-### Input
-
-Number of Queens: 4
-
-### Expected Output
-
-    Solution Chessboard:
