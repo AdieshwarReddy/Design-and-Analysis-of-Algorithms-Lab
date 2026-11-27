@@ -1,0 +1,11 @@
+Compilation and execution
+Open GitHub Codespaces and run:
+cd 06_Graph_Coloring
+
+
+Compile:
+g++ Graph_Coloring.cpp -o graph_coloring
+
+
+Execute:
+./graph_coloring
