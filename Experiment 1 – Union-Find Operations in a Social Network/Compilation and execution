@@ -1,0 +1,10 @@
+Open GitHub Codespaces and execute:
+
+cd 01_Union_Find
+
+Compile:
+g++ Union_Find.cpp -o union_find
+
+
+Run:
+./union_find
