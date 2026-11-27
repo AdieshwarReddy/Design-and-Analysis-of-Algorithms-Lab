@@ -1,0 +1,129 @@
+## Experiment 3: Rat in a Maze Using Backtracking
+
+**Q1. What is the Rat in a Maze problem?**
+
+Ans: A problem in which a rat must find a valid path from the starting position to the destination in a maze.
+
+**Q2. Which algorithm technique is used in this experiment?**
+
+Ans: Backtracking.
+
+**Q3. What is backtracking?**
+
+Ans: An algorithm design technique that builds a solution incrementally and abandons invalid choices.
+
+**Q4. How is the maze represented?**
+
+Ans: Using a two-dimensional matrix containing zeros and ones.
+
+**Q5. What does zero represent in the maze?**
+
+Ans: A blocked cell.
+
+**Q6. What does one represent in the maze?**
+
+Ans: An accessible cell.
+
+**Q7. What is the starting position of the rat?**
+
+Ans: The top-left corner, represented by (0,0).
+
+**Q8. What is the destination of the rat?**
+
+Ans: The bottom-right corner, represented by (n-1,n-1).
+
+**Q9. In which directions can the rat move in our program?**
+
+Ans: Down and right.
+
+**Q10. What is the purpose of the isSafe() function?**
+
+Ans: To check whether the current position is within the maze boundaries and is accessible.
+
+**Q11. What is the purpose of the solveMaze() function?**
+
+Ans: To recursively search for a valid path using backtracking.
+
+**Q12. What is the purpose of the solution matrix?**
+
+Ans: To store the cells that form the valid path.
+
+**Q13. What is the base condition of the recursive function?**
+
+Ans: The function returns true when the rat reaches the valid destination cell.
+
+**Q14. What happens when the rat reaches a blocked cell?**
+
+Ans: The function returns false and the algorithm explores another possible path.
+
+**Q15. What happens when both possible movements fail?**
+
+Ans: The current cell is unmarked and the algorithm backtracks.
+
+**Q16. Why is recursion used in this problem?**
+
+Ans: To explore possible paths by solving smaller instances of the same problem.
+
+**Q17. What is the worst-case time complexity of this implementation?**
+
+Ans: O(2^(2n)) is an exponential upper bound for an n by n maze with down and right movements.
+
+**Q18. What is the auxiliary space complexity?**
+
+Ans: O(n^2), including the solution matrix and recursion stack.
+
+**Q19. What is a state space tree?**
+
+Ans: A tree representing possible choices and states explored while solving a problem.
+
+**Q20. What is pruning?**
+
+Ans: Eliminating branches of the search space that cannot produce a valid solution.
+
+**Q21. What is the difference between brute force and backtracking?**
+
+Ans: Brute force examines possible solutions exhaustively, whereas backtracking abandons invalid partial solutions early.
+
+**Q22. Can a maze have multiple valid paths?**
+
+Ans: Yes.
+
+**Q23. Does our program find all possible paths?**
+
+Ans: No. It stops after finding the first valid path.
+
+**Q24. How can the program be modified to find all possible paths?**
+
+Ans: Continue exploring alternative paths after reaching the destination instead of terminating the search.
+
+**Q25. What happens if the starting cell is blocked?**
+
+Ans: The program reports that no path exists.
+
+**Q26. What happens if the destination cell is blocked?**
+
+Ans: The program reports that no path exists.
+
+**Q27. Can the rat move in four directions?**
+
+Ans: Yes, if the algorithm is modified to support up, down, left and right movements with appropriate visited-cell tracking.
+
+**Q28. Why is visited-cell tracking required for four-directional movement?**
+
+Ans: To prevent revisiting cells and creating infinite recursive cycles.
+
+**Q29. Does backtracking guarantee the shortest path?**
+
+Ans: No. This implementation finds the first valid path.
+
+**Q30. Which algorithm can find the shortest path in an unweighted maze?**
+
+Ans: Breadth-First Search (BFS).
+
+**Q31. What are the applications of backtracking?**
+
+Ans: Maze solving, N-Queens, Sudoku, graph coloring and constraint satisfaction problems.
+
+**Q32. What is the main disadvantage of backtracking?**
+
+Ans: It can require exponential execution time in the worst case.
