@@ -1,0 +1,11 @@
+Compilation and execution
+Open GitHub Codespaces and run:
+cd 07_Travelling_Salesman
+
+
+Compile:
+g++ TSP.cpp -o tsp
+
+
+Execute:
+./tsp
