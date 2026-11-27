@@ -1,0 +1,201 @@
+## Experiment 9: Hamiltonian Cycle Using Branch and Bound
+
+**Q1. What is a Hamiltonian Cycle?**
+
+Ans: A cycle that visits every vertex of a graph exactly once before returning to the starting vertex.
+
+**Q2. What is a Hamiltonian Path?**
+
+Ans: A path that visits every vertex exactly once.
+
+**Q3. What is the difference between a Hamiltonian Path and a Hamiltonian Cycle?**
+
+Ans: A Hamiltonian Cycle returns to the starting vertex, whereas a Hamiltonian Path does not necessarily return.
+
+**Q4. Which algorithm technique is used in this experiment?**
+
+Ans: Branch and Bound with feasibility-based pruning.
+
+**Q5. What is Branch and Bound?**
+
+Ans: An algorithm design technique that explores possible solutions by branching and eliminates branches using bounds or feasibility conditions.
+
+**Q6. What is branching?**
+
+Ans: Dividing a problem into smaller subproblems representing different possible choices.
+
+**Q7. What is bounding?**
+
+Ans: Evaluating a partial solution to determine whether it can produce a feasible or better solution.
+
+**Q8. What is pruning?**
+
+Ans: Eliminating branches that cannot produce a required solution.
+
+**Q9. What is a state space tree?**
+
+Ans: A tree representing the possible states and choices of a problem.
+
+**Q10. What is a feasible solution?**
+
+Ans: A solution that satisfies all the constraints of a problem.
+
+**Q11. What is the objective of the Hamiltonian Cycle problem?**
+
+Ans: To determine whether a cycle visiting every vertex exactly once exists.
+
+**Q12. Can a vertex be visited more than once in a Hamiltonian Cycle?**
+
+Ans: No, except that the starting vertex is repeated at the end to represent cycle closure.
+
+**Q13. Must every edge be visited in a Hamiltonian Cycle?**
+
+Ans: No. Only every vertex must be visited exactly once.
+
+**Q14. What is an Eulerian Cycle?**
+
+Ans: A closed trail that traverses every edge of a graph exactly once.
+
+**Q15. What is the difference between Hamiltonian and Eulerian Cycles?**
+
+Ans: A Hamiltonian Cycle visits every vertex exactly once, whereas an Eulerian Cycle traverses every edge exactly once.
+
+**Q16. What is the minimum number of vertices required for a Hamiltonian Cycle in a simple undirected graph?**
+
+Ans: Three vertices.
+
+**Q17. Can a disconnected graph contain a Hamiltonian Cycle?**
+
+Ans: No.
+
+**Q18. Can a tree contain a Hamiltonian Cycle?**
+
+Ans: No, because a tree does not contain cycles.
+
+**Q19. Can a complete graph contain a Hamiltonian Cycle?**
+
+Ans: Yes, if it contains at least three vertices.
+
+**Q20. What is the minimum degree required for each vertex in a Hamiltonian graph?**
+
+Ans: At least two.
+
+**Q21. Does a minimum degree of two guarantee a Hamiltonian Cycle?**
+
+Ans: No. It is a necessary condition but not a sufficient condition.
+
+**Q22. What is the purpose of the adjacency matrix?**
+
+Ans: To represent connections between vertices.
+
+**Q23. What does zero represent in the adjacency matrix?**
+
+Ans: The absence of an edge.
+
+**Q24. What does one represent in the adjacency matrix?**
+
+Ans: The presence of an edge.
+
+**Q25. What is the purpose of the path array?**
+
+Ans: To store the sequence of vertices in the current candidate cycle.
+
+**Q26. What is the purpose of the visited array?**
+
+Ans: To prevent a vertex from being visited more than once.
+
+**Q27. What is the purpose of the isFeasible() function?**
+
+Ans: To eliminate partial paths when an unvisited vertex has fewer than two possible neighbors in the remaining graph.
+
+**Q28. What is the purpose of hamiltonianCycle()?**
+
+Ans: To recursively explore possible vertex sequences and find a valid Hamiltonian Cycle.
+
+**Q29. What is the base condition of the recursive function?**
+
+Ans: When all vertices have been visited, check whether the last vertex is connected to the starting vertex.
+
+**Q30. Why does the algorithm start from vertex 0?**
+
+Ans: A Hamiltonian Cycle contains every vertex, so any vertex can be chosen as the starting point.
+
+**Q31. What happens when a partial path cannot form a cycle?**
+
+Ans: The branch is eliminated and another possible path is explored.
+
+**Q32. What is the worst-case candidate search space complexity?**
+
+Ans: O(V!), where V is the number of vertices.
+
+**Q33. What is the time complexity of the bounding function?**
+
+Ans: O(V^2).
+
+**Q34. What is the space complexity including the adjacency matrix?**
+
+Ans: O(V^2).
+
+**Q35. What is the recursion stack complexity?**
+
+Ans: O(V).
+
+**Q36. Is the Hamiltonian Cycle decision problem NP-complete?**
+
+Ans: Yes.
+
+**Q37. What is an NP-complete problem?**
+
+Ans: A problem that belongs to NP and is at least as hard as every other problem in NP under polynomial-time reductions.
+
+**Q38. Can multiple Hamiltonian Cycles exist in a graph?**
+
+Ans: Yes.
+
+**Q39. Does our program display all Hamiltonian Cycles?**
+
+Ans: No. It displays the first valid Hamiltonian Cycle.
+
+**Q40. What is the difference between Branch and Bound and brute force?**
+
+Ans: Brute force examines possible solutions exhaustively, whereas Branch and Bound eliminates branches that cannot satisfy the required conditions or improve the current solution.
+
+**Q41. What is the difference between Backtracking and Branch and Bound?**
+
+Ans: Backtracking primarily eliminates choices that violate constraints, whereas Branch and Bound typically uses bounds to eliminate branches that cannot improve an objective. Feasibility-based pruning can also be used for decision problems.
+
+**Q42. What is a live node?**
+
+Ans: A generated node that may still be explored.
+
+**Q43. What is a dead node?**
+
+Ans: A node that will not be expanded further.
+
+**Q44. What is an expansion node?**
+
+Ans: A node currently being expanded to generate its child nodes.
+
+**Q45. What is the relationship between Hamiltonian Cycle and TSP?**
+
+Ans: TSP finds a Hamiltonian Cycle with the minimum total travelling cost.
+
+**Q46. Does every connected graph contain a Hamiltonian Cycle?**
+
+Ans: No. Connectivity alone does not guarantee a Hamiltonian Cycle.
+
+**Q47. Can a graph containing a bridge have a Hamiltonian Cycle?**
+
+Ans: No. A Hamiltonian Cycle requires an alternative route across every separation of the graph.
+
+**Q48. What is Dirac's Theorem?**
+
+Ans: A simple graph with at least three vertices is Hamiltonian if every vertex has degree at least half the total number of vertices.
+
+**Q49. What is the Hamiltonian Cycle in our first test case?**
+
+Ans: 0 -> 1 -> 2 -> 4 -> 3 -> 0.
+
+**Q50. What are the applications of Hamiltonian Cycles?**
+
+Ans: Route planning, network design, circuit design, scheduling and combinatorial optimization.
