@@ -1,0 +1,181 @@
+## Experiment 6: Graph Coloring Using Greedy Method
+
+**Q1. What is Graph Coloring?**
+
+Ans: Graph Coloring is the process of assigning colors to vertices such that no two adjacent vertices have the same color.
+
+**Q2. Which algorithm technique is used in this experiment?**
+
+Ans: Greedy Method.
+
+**Q3. What is the objective of Graph Coloring?**
+
+Ans: To assign colors to vertices without conflicts, ideally using the minimum possible number of colors.
+
+**Q4. What is a chromatic number?**
+
+Ans: The minimum number of colors required to properly color a graph.
+
+**Q5. What is proper vertex coloring?**
+
+Ans: A coloring in which no two adjacent vertices have the same color.
+
+**Q6. What are adjacent vertices?**
+
+Ans: Two vertices connected directly by an edge.
+
+**Q7. Can non-adjacent vertices have the same color?**
+
+Ans: Yes.
+
+**Q8. Can adjacent vertices have the same color?**
+
+Ans: No.
+
+**Q9. What is the Greedy Method?**
+
+Ans: An algorithm design technique that selects a locally optimal choice at each step.
+
+**Q10. How does Greedy Graph Coloring work?**
+
+Ans: It assigns the smallest available color to each vertex without conflicting with previously colored adjacent vertices.
+
+**Q11. Does Greedy Graph Coloring always produce an optimal solution?**
+
+Ans: No. It may use more colors than the chromatic number.
+
+**Q12. What affects the number of colors used by the greedy algorithm?**
+
+Ans: The order in which vertices are processed.
+
+**Q13. How is the graph represented in our program?**
+
+Ans: Using an adjacency matrix.
+
+**Q14. What does zero represent in the adjacency matrix?**
+
+Ans: The absence of an edge.
+
+**Q15. What does one represent in the adjacency matrix?**
+
+Ans: The presence of an edge.
+
+**Q16. What is the purpose of the color array?**
+
+Ans: To store the color assigned to each vertex.
+
+**Q17. Why is the color array initialized to -1?**
+
+Ans: To indicate that vertices are initially uncolored.
+
+**Q18. What is the purpose of the unavailable array?**
+
+Ans: To identify colors already used by adjacent vertices.
+
+**Q19. Why is the unavailable array reset for each vertex?**
+
+Ans: Because every vertex may have a different set of adjacent vertices and unavailable colors.
+
+**Q20. What is the time complexity of our implementation?**
+
+Ans: O(V^2).
+
+**Q21. What is the auxiliary space complexity?**
+
+Ans: O(V).
+
+**Q22. What is the total space complexity including the adjacency matrix?**
+
+Ans: O(V^2).
+
+**Q23. What is a complete graph?**
+
+Ans: A graph in which every pair of distinct vertices is connected by an edge.
+
+**Q24. How many colors are required for a complete graph with N vertices?**
+
+Ans: N colors.
+
+**Q25. How many colors are required for a nonempty graph without edges?**
+
+Ans: One color.
+
+**Q26. What is a bipartite graph?**
+
+Ans: A graph whose vertices can be divided into two disjoint sets such that every edge connects vertices from different sets.
+
+**Q27. How many colors are required for a bipartite graph containing at least one edge?**
+
+Ans: Two colors.
+
+**Q28. What is the chromatic number of a triangle graph?**
+
+Ans: Three.
+
+**Q29. What is the chromatic number of an even cycle?**
+
+Ans: Two.
+
+**Q30. What is the chromatic number of an odd cycle?**
+
+Ans: Three.
+
+**Q31. What is the chromatic number of a tree containing at least two vertices?**
+
+Ans: Two.
+
+**Q32. What is the maximum degree of a graph?**
+
+Ans: The maximum number of edges incident on any vertex in a simple graph.
+
+**Q33. What is the upper bound on the number of colors used by greedy coloring?**
+
+Ans: Maximum vertex degree plus one.
+
+**Q34. What is a self-loop?**
+
+Ans: An edge connecting a vertex to itself.
+
+**Q35. Can a graph containing a self-loop have a proper vertex coloring?**
+
+Ans: No.
+
+**Q36. What is the Four Color Theorem?**
+
+Ans: Every planar graph without self-loops can be properly colored using at most four colors.
+
+**Q37. What is a planar graph?**
+
+Ans: A graph that can be drawn on a plane without edges crossing except at their endpoints.
+
+**Q38. How is Graph Coloring used in examination scheduling?**
+
+Ans: Subjects with common students are represented as adjacent vertices and assigned different examination time slots.
+
+**Q39. How is Graph Coloring used in compilers?**
+
+Ans: It is used in register allocation to assign different registers to variables whose live ranges interfere.
+
+**Q40. What is the difference between Greedy Graph Coloring and Backtracking Graph Coloring?**
+
+Ans: Greedy coloring assigns colors without reconsidering previous choices, whereas backtracking explores alternative assignments when conflicts occur.
+
+**Q41. Can backtracking find an optimal graph coloring?**
+
+Ans: Yes, by systematically testing color assignments and determining the smallest feasible number of colors.
+
+**Q42. What is the main advantage of Greedy Graph Coloring?**
+
+Ans: It is simple and computationally efficient.
+
+**Q43. What is the main disadvantage of Greedy Graph Coloring?**
+
+Ans: It does not guarantee the minimum number of colors.
+
+**Q44. How many colors are used in our first test case?**
+
+Ans: Three colors.
+
+**Q45. What are the applications of Graph Coloring?**
+
+Ans: Examination scheduling, register allocation, map coloring, frequency assignment and resource allocation.
