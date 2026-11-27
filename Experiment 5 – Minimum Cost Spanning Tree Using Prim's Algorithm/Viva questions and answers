@@ -1,0 +1,181 @@
+## Experiment 5: Prim's Algorithm
+
+**Q1. What is Prim's Algorithm?**
+
+Ans: A greedy algorithm used to find the Minimum Spanning Tree of a weighted undirected graph.
+
+**Q2. Which algorithm design technique is used in Prim's Algorithm?**
+
+Ans: Greedy Method.
+
+**Q3. What is a graph?**
+
+Ans: A data structure consisting of vertices and edges.
+
+**Q4. What is a vertex?**
+
+Ans: A node in a graph.
+
+**Q5. What is an edge?**
+
+Ans: A connection between two vertices.
+
+**Q6. What is a weighted graph?**
+
+Ans: A graph in which edges have associated weights or costs.
+
+**Q7. What is an undirected graph?**
+
+Ans: A graph in which edges do not have a specific direction.
+
+**Q8. What is a connected graph?**
+
+Ans: A graph in which a path exists between every pair of vertices.
+
+**Q9. What is a spanning tree?**
+
+Ans: A connected, acyclic subgraph that includes all vertices of the original graph.
+
+**Q10. What is a Minimum Spanning Tree?**
+
+Ans: A spanning tree having the minimum possible total edge weight.
+
+**Q11. How many edges are present in a spanning tree?**
+
+Ans: V - 1 edges, where V is the number of vertices.
+
+**Q12. Can a spanning tree contain cycles?**
+
+Ans: No.
+
+**Q13. What is a greedy algorithm?**
+
+Ans: An algorithm that selects the locally optimal choice at each step.
+
+**Q14. From which vertex does Prim's Algorithm start?**
+
+Ans: It can start from any vertex. Our implementation starts from vertex 0.
+
+**Q15. How does Prim's Algorithm select an edge?**
+
+Ans: It selects the minimum weight edge connecting the current tree to an unselected vertex.
+
+**Q16. What is the purpose of the key array?**
+
+Ans: To store the minimum known edge weight connecting each vertex to the growing spanning tree.
+
+**Q17. What is the purpose of the parent array?**
+
+Ans: To store the parent vertex of each vertex in the Minimum Spanning Tree.
+
+**Q18. What is the purpose of the selected array?**
+
+Ans: To identify vertices already included in the spanning tree.
+
+**Q19. What is the purpose of minKey()?**
+
+Ans: To find the unselected vertex having the smallest key value.
+
+**Q20. Why are key values initialized to infinity?**
+
+Ans: To indicate that no connecting edge has been identified initially.
+
+**Q21. Why is the starting vertex key initialized to zero?**
+
+Ans: To ensure that the starting vertex is selected first.
+
+**Q22. What is the time complexity of Prim's Algorithm using an adjacency matrix?**
+
+Ans: O(V^2).
+
+**Q23. What is the time complexity using an adjacency list and binary heap?**
+
+Ans: O(E log V).
+
+**Q24. What is the space complexity of an adjacency matrix?**
+
+Ans: O(V^2).
+
+**Q25. What is the auxiliary space complexity of our implementation?**
+
+Ans: O(V).
+
+**Q26. Can Prim's Algorithm work with negative edge weights?**
+
+Ans: Yes. Negative edge weights do not prevent Prim's Algorithm from finding an MST.
+
+**Q27. Can Prim's Algorithm produce a spanning tree for a disconnected graph?**
+
+Ans: No. A disconnected graph has no spanning tree covering all vertices.
+
+**Q28. What is a Minimum Spanning Forest?**
+
+Ans: A collection of Minimum Spanning Trees, one for each connected component.
+
+**Q29. Is the Minimum Spanning Tree always unique?**
+
+Ans: No. Multiple MSTs may exist when edge weights are equal.
+
+**Q30. When is a Minimum Spanning Tree guaranteed to be unique?**
+
+Ans: When all edge weights are distinct.
+
+**Q31. What is Kruskal's Algorithm?**
+
+Ans: A greedy algorithm that constructs an MST by selecting edges in increasing weight order while avoiding cycles.
+
+**Q32. What is the difference between Prim's and Kruskal's Algorithms?**
+
+Ans: Prim's Algorithm grows a single tree from a starting vertex, whereas Kruskal's Algorithm merges separate components by selecting minimum weight edges.
+
+**Q33. Which data structure is commonly used in Kruskal's Algorithm?**
+
+Ans: Disjoint Set Union or Union-Find.
+
+**Q34. Which data structure can optimize Prim's Algorithm?**
+
+Ans: A priority queue or min-heap.
+
+**Q35. Which implementation of Prim's Algorithm is suitable for dense graphs?**
+
+Ans: The adjacency matrix implementation with O(V^2) time complexity.
+
+**Q36. What is a dense graph?**
+
+Ans: A graph containing a large number of edges relative to the maximum possible number.
+
+**Q37. What is a sparse graph?**
+
+Ans: A graph containing relatively few edges.
+
+**Q38. What is the difference between Prim's and Dijkstra's Algorithms?**
+
+Ans: Prim's Algorithm minimizes the total spanning tree cost, whereas Dijkstra's Algorithm finds shortest paths from a source vertex.
+
+**Q39. What is the cut property of a Minimum Spanning Tree?**
+
+Ans: A minimum weight edge crossing a cut that respects the current partial MST is safe to include.
+
+**Q40. What are the applications of Prim's Algorithm?**
+
+Ans: Computer networks, electrical grids, road networks, telecommunication systems and minimum cost infrastructure planning.
+
+**Q41. What is the minimum spanning tree cost in our first test case?**
+
+Ans: 16.
+
+**Q42. How many edges are selected for five vertices?**
+
+Ans: Four edges.
+
+**Q43. Does changing the starting vertex change the minimum total cost?**
+
+Ans: No. It may change the selected edges when multiple MSTs exist, but the minimum total cost remains the same.
+
+**Q44. What does zero represent in our adjacency matrix?**
+
+Ans: The absence of an edge.
+
+**Q45. Can our implementation handle zero-weight edges?**
+
+Ans: No. Zero is reserved to represent the absence of an edge. A different representation is required to support zero-weight edges.
