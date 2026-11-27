@@ -112,3 +112,23 @@ int main() {
 
     return 0;
 }
+
+
+ Sample input
+4
+0 10 15 20
+10 0 35 25
+15 35 0 30
+20 25 30 0
+
+
+ Sample output
+Enter number of cities: 4
+Enter travelling cost matrix:
+0 10 15 20
+10 0 35 25
+15 35 0 30
+20 25 30 0
+
+Minimum Travelling Cost: 80
+Optimal Route: 0 -> 1 -> 3 -> 2 -> 0
